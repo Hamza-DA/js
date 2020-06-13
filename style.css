@@ -107,7 +107,7 @@ svg {
     border: 4px solid #ff6b6b;
     outline: none;
 }
-.dbtn:hover:active{
+.dbtn:hover{
     background-color: #ff6b6b;
 }
 .ibtn{
@@ -115,7 +115,7 @@ svg {
     border: 4px solid #a7c957;
     outline: none;
 }
-.ibtn:hover:active{
+.ibtn:hover{
    background-color: #a7c957;
 }
 .rbtn{
@@ -123,7 +123,7 @@ svg {
     border: 4px solid #a4c3b2;
     outline: none;
 }
-.rbtn:hover:active{
+.rbtn:hover{
     background-color: #a4c3b2;
 }
 button{
@@ -170,6 +170,26 @@ button:active{
         width: 70%;
         height: 400px;
     }
+    .dbtn:active{
+        background-color: #ff6b6b;
+    }
+    .ibtn{
+        background: none;
+        border: 4px solid #a7c957;
+        outline: none;
+    }
+    .ibtn:active{
+       background-color: #a7c957;
+    }
+    .rbtn{
+        background: none;
+        border: 4px solid #a4c3b2;
+        outline: none;
+    }
+    .rbtn:active{
+        background-color: #a4c3b2;
+    }
+    
 }
 /* counter */
 
