@@ -85,7 +85,7 @@ svg {
 .task{
     display: flex;
 }
-
+/* counter */
 .container2{
     background-color: #555b6e;
     min-height: 100vh;
@@ -103,12 +103,27 @@ svg {
     align-items: center;
 }
 .dbtn{
+    background: none;
+    border: 4px solid #ff6b6b;
+    outline: none;
+}
+.dbtn:hover:active{
     background-color: #ff6b6b;
 }
 .ibtn{
-    background-color: #a7c957;
+    background: none;
+    border: 4px solid #a7c957;
+    outline: none;
+}
+.ibtn:hover:active{
+   background-color: #a7c957;
 }
 .rbtn{
+    background: none;
+    border: 4px solid #a4c3b2;
+    outline: none;
+}
+.rbtn:hover:active{
     background-color: #a4c3b2;
 }
 button{
@@ -117,7 +132,7 @@ button{
     font-size: 18px;
     font-weight: bolder;
     color: rgb(51, 51, 51);
-    font-family: sans-serif;
+    font-family: serif;
     border-radius: 20px;
     cursor: pointer;
     transition: .1s ease;
@@ -134,7 +149,7 @@ button:active{
 }
 .num{
  color: #1a535c ;
- font-size: 50px;
+ font-size: 80px;
 }
 .display{
     text-align: center;
@@ -156,3 +171,6 @@ button:active{
         height: 400px;
     }
 }
+/* counter */
+
+/* counter */
