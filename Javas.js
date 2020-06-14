@@ -39,14 +39,12 @@ binbtn.addEventListener('click', () => {
 function valid() {
     return inputContent.value !== ''
 }
-
+////////////////////////////////
 const dbn = document.querySelector('.dbtn')
 const rbn = document.querySelector('.rbtn')
 const ibn = document.querySelector('.ibtn')
 let numberc = document.querySelector('#numid')
-
 number = 0;
-
 dbn.addEventListener('click', () => {
     minnum();
     numberc.innerHTML = number;
@@ -54,19 +52,17 @@ dbn.addEventListener('click', () => {
         numberc.style.color = "#ff6b6b"
     }
     })
-
 function minnum() {
      number--;
 }
-
 ibn.addEventListener('click', () => {
     addnum();
     numberc.innerHTML = number;
-    if (number > 0) {
+    if (number >= 0) {
         numberc.style.color = "#a7c957"
     }
+    
     })
-
 function addnum() {
      number++;
 }
@@ -80,4 +76,22 @@ rbn.addEventListener('click', () => {
     function resetnum() {
         number = 0;
    }
-   
+////////////////////////////////
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabcontent = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabcontent.forEach(cont => {
+            cont.classList.remove('active')
+        });
+        
+        tabs.forEach(tab => {
+            tab.classList.remove('active')
+        });
+        tab.classList.add('active')
+        target.classList.add('active')
+    })
+});
+////////////////////////////////

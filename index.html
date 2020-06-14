@@ -7,7 +7,7 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
   <div class="wrapper">
         <div class="title">
             <h1>TODO</h1>
@@ -42,7 +42,7 @@
   </div>
     </div>
 
-    <div class="container2">
+    <div id="container2">
         <div class="holder2">
             <div class="display">
                 <h1 class="num" id="numid">0</h1>
@@ -54,6 +54,29 @@
             </div>
         </div>
     </div>
+
+    <div id="tabsm">
+        <div class="holder3">
+            <ul class="btnholder2">
+                <li data-tab-target="#home" style="cursor:pointer ">home</li> 
+                <li data-tab-target="#contact">contact</li> 
+                <li data-tab-target="#about">about</li> 
+            </ul>
+            <div class="homecl"  id="home" data-tab-content class="active">
+                <h1>welcome</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nisi asperiores omnis, corrupti officia tenetur quam ex delectus commodi magnam nobis, inventore molestias non magni culpa totam facere, pariatur consequatur eaque veniam quos numquam aperiam? Omnis, cumque distinctio illo autem eos deleniti asperiores quidem optio, officiis, aliquam molestiae magni ad!</p>
+            </div>
+            <div data-tab-content id="contact">
+                <h1>contact us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad consequuntur maxime reiciendis molestias porro dicta culpa laborum! Consectetur, deserunt odio vero consequatur distinctio fugit repellendus. Aperiam officia in facere animi aliquam nihil, asperiores praesentium esse dolorem et odit, maxime sequi!</p>
+            </div>
+            <div data-tab-content id="about">
+                <h1>about us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, minima.</p>
+            </div>
+        </div>
+    </div>
+
     <script src="./Javas.js"></script>
 </body>
 </html>
